@@ -17,12 +17,12 @@ class Order:
         
 class PaymentProcessor:
     def pay_credit(self, order, security_code):
-        print("Processing debit payment type")
+        print("Processing credit payment type")
         print(f"Verifying security code: {security_code}")
         order.status = "paid"
     
     def pay_debit(self, order, security_code):
-        print("Processing credit payment type")
+        print("Processing debit payment type")
         print(f"Verifying security code: {security_code}")
         order.status = "paid"
         
